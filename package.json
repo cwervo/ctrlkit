@@ -1,6 +1,6 @@
 {
   "name": "ctrlkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple JS interface library for interacting with CTRLKit",
   "main": "index.js",
   "scripts": {
