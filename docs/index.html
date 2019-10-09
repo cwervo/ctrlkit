@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>🧠 ctrl example - printing taps 🧠</title>
+        <style>
+            body {
+                font-family: san-seif;
+                text-align: center;
+                    font-size: 2rem;
+            }
+            .big-text {
+                display: block;
+                font-size: 10rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big-text">
+            Finger tapped:
+        </div>
+        <span id="finger" class="big-text">
+            &lt;none&gt;
+        </span>
+
+        <footer>An example page for <a href="https://github.com/cwervo/ctrlkit"><code>ctrlkit</code></a></footer>
+
+        <script type="module">
+            import * as CTRL from './ctrl-lib.js';
+        let ctrlSocket = new CTRL.Socket();
+
+        let fingerLabel = document.querySelector('#finger')
+        ctrlSocket.socket.onmessage = event => {
+            console.log(CTRL.parseTapData(event))
+            fingerLabel.innerHTML = CTRL.parseTapData(event).actor
+        }
+        ctrlSocket.setOnError(event => {
+            document.body.innerHTML = 'Whoops, looks like you don\'t have \<code\>ctrlservice\<\/code\> running.'
+        })
+        </script>
+    </body>
+</html>
+
