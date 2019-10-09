@@ -4,7 +4,7 @@
   "description": "A simple JS interface library for interacting with CTRLKit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests, yet ...\"",
     "update-docs": "cp index.js docs/ctrl-lib.js"
   },
   "repository": {
