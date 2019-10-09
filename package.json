@@ -1,0 +1,23 @@
+{
+  "name": "ctrlkit",
+  "version": "0.0.1",
+  "description": "A simple JS interface library for interacting with CTRLKit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwervo/ctrlkit"
+  },
+  "keywords": [
+    "ctrl",
+    "bci"
+  ],
+  "author": "Andrés Cuevo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwervo/ctrlkit/issues"
+  },
+  "homepage": "https://github.com/cwervo/ctrlkit#readme"
+}
